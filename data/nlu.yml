@@ -1,0 +1,203 @@
+version: "3.1"
+
+nlu:
+
+- intent: study_plan
+  examples: |
+    - I want to learn [Python](subject) for [30](days) days
+    - Can you help me with [Java](subject) for [20](days) days?
+    - I want to study [Data Science](subject) for [15](days) days
+    - I'm interested in studying [Machine Learning](subject) for [25](days) days
+    - I want to learn [JavaScript](subject) for [30](days) days
+    - My favorite subject is [HTML](subject), and I want to study it for [10](days) days
+    - I want to delve into [CSS](subject) for [25](days) days
+    - Can you assist me with [C++](subject) for [20](days) days?
+    - I'd like to study [Artificial Intelligence](subject) for [30](days) days
+    - I want to learn [Ruby](subject) for [20](days) days
+    - Can you help me with [SQL](subject) for [15](days) days?
+    - I'm interested in studying [React](subject) for [25](days) days
+    - I want to delve into [Angular](subject) for [30](days) days
+    - My favorite subject is [PHP](subject), and I want to study it for [10](days) days
+    - I want to delve into [Swift](subject) for [25](days) days
+    - Can you assist me with [Flutter](subject) for [20](days) days?
+    - I'd like to study [Django](subject) for [30](days) days
+    - I want to learn [Node.js](subject) for [20](days) days
+    - Can you help me with [TypeScript](subject) for [15](days) days?
+    - I'm interested in studying [C#](subject) for [25](days) days
+    - I want to delve into [Perl](subject) for [30](days) days
+    - My favorite subject is [Kotlin](subject), and I want to study it for [10](days) days
+    - I want to delve into [Rust](subject) for [25](days) days
+    - Can you assist me with [Go](subject) for [20](days) days?
+    - I'd like to study [Scala](subject) for [30](days) days
+    - I want to learn [Lua](subject) for [20](days) days
+    - Can you help me with [R](subject) for [15](days) days?
+    - I'm interested in studying [Matlab](subject) for [25](days) days
+    - I want to learn [Assembly](subject) for [30](days) days
+    - My favorite subject is [Haskell](subject), and I want to study it for [10](days) days
+    - I want to delve into [VB.NET](subject) for [25](days) days
+    - Can you assist me with [Dart](subject) for [20](days) days?
+    - I'd like to study [COBOL](subject) for [30](days) days
+    - I want to learn [Groovy](subject) for [20](days) days
+    - Can you help me with [Scheme](subject) for [15](days) days?
+    - I'm interested in studying [Erlang](subject) for [25](days) days
+    - I want to learn [Fortran](subject) for [30](days) days
+    - I want to learn [Mathematics](subject) for [30](days) days
+    - Can you help me with [History](subject) for [20](days) days?
+    - I want to study [Geography](subject) for [15](days) days
+    - I'm interested in studying [English](subject) for [25](days) days
+    - I want to learn [Physics](subject) for [30](days) days
+    - My favorite subject is [Chemistry](subject), and I want to study it for [10](days) days
+    - I want to delve into [Biology](subject) for [25](days) days
+    - Can you assist me with [Economics](subject) for [20](days) days?
+    - I'd like to study [Political Science](subject) for [30](days) days
+    - I want to learn [Sociology](subject) for [20](days) days
+    - Can you help me with [Psychology](subject) for [15](days) days?
+    - I'm interested in studying [Philosophy](subject) for [25](days) days
+    - I want to learn [Art](subject) for [30](days) days
+    - My favorite subject is [Music](subject), and I want to study it for [10](days) days
+    - I want to delve into [Physical Education](subject) for [25](days) days
+    - Can you assist me with [Computer Science](subject) for [20](days) days?
+
+
+- intent: dynamic_content
+  examples: |
+    - generate a joke for me
+    - tell me a funny joke
+    - I need a laugh, share a joke with me
+    - entertain me with a joke
+    - make me smile with a humorous remark
+    - generate a witty comment for me
+    - share a light-hearted joke
+    - provide a joke to lift my spirits
+    - give me an interesting fact
+    - share a random fact with me
+    - teach me something new with a fact
+    - provide a fascinating piece of information
+    - generate a fun fact for me
+    - enlighten me with an intriguing fact
+    - tell me a surprising fact
+    - share a cool piece of knowledge
+
+- intent: decision_support
+  examples: |
+    - What should I do about [situation]?
+    - Can you help me decide on [topic]?
+    - I'm torn between [choice1] and [choice2], what are your thoughts?
+    - What's your advice on [matter]?
+    - Compare [option A] and [option B].
+    - Which one is better, [option X] or [option Y]?
+    - Tell me the pros and cons of [option].
+    - What are the advantages and disadvantages of [decision]?
+    - Can you list the benefits and drawbacks of [choice]?
+    - Any recommendations for [category]?
+    - What would you suggest for [specific situation]?
+    - Do you have any advice on [type of decision]?
+    - Could you recommend a [product/service] for [purpose]?
+    - I need more information about [aspect].
+    - Can you provide more details on [point]?
+    - I'm not clear on [specific detail], can you explain?
+    - Could you clarify [uncertain aspect] for me?
+    - How does [alternative] compare to [another alternative]?
+    - What's the best course of action in [specific context]?
+    - Explain the potential outcomes of [decision] to me.
+    - Recommend a strategy for dealing with [challenge].
+    - Provide insights into the implications of choosing [option].
+    - I'm considering [choice], what are the potential risks involved?
+    - Help me understand the key factors in deciding [matter].
+
+
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: out_of_scope
+  examples: |
+    - Sorry, I didn't understand that.
+    - I'm not sure what you mean.
+    - Can you rephrase that?

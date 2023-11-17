@@ -1,0 +1,52 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: study plan
+  steps:
+  - intent: study_plan
+  - action: action_default_fallback
+
+
+- story: dynamic content
+  steps:
+  - intent: dynamic_content
+  - action: action_default_fallback
+
+- story: decision support
+  steps:
+  - intent: decision_support
+  - action: action_default_fallback
+
+- story: Handle out-of-scope queries
+  steps:
+  - intent: out_of_scope
+  - action: action_default_fallback
